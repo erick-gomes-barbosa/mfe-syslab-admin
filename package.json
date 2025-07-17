@@ -49,13 +49,16 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@apollo/client": "^3.13.8",
     "@hookform/resolvers": "^5.1.1",
+    "@nhost/nhost-js": "^3.3.0",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "autoprefixer": "^10.4.21",
+    "graphql": "^16.11.0",
     "postcss": "^8.5.6",
     "postcss-loader": "^8.1.1",
     "react": "^17.0.2",

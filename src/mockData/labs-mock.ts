@@ -2,8 +2,8 @@
 
 export const MockLabs = [
   {
-    enviroment: "1abcd",
-    name: "Lab 01",
+    enviroment_id: "1abcd",
+    lab_name: "Lab 01",
     opening_time: "13:00",
     closing_time: "16:00",
     qty_chairs: 20,
@@ -14,8 +14,8 @@ export const MockLabs = [
     is_activated: true,
   },
   {
-    enviroment: "2abcd",
-    name: "Lab 02",
+    enviroment_id: "2abcd",
+    lab_name: "Lab 02",
     opening_time: "15:30",
     closing_time: "18:20",
     qty_chairs: 25,
@@ -26,8 +26,8 @@ export const MockLabs = [
     is_activated: true,
   },
   {
-    enviroment: "3abcd",
-    name: "Lab 03",
+    enviroment_id: "3abcd",
+    lab_name: "Lab 03",
     opening_time: "11:00",
     closing_time: "12:00",
     qty_chairs: 18,
@@ -38,8 +38,8 @@ export const MockLabs = [
     is_activated: false,
   },
   {
-    enviroment: "4abcd",
-    name: "Lab 04",
+    enviroment_id: "4abcd",
+    lab_name: "Lab 04",
     opening_time: "09:00",
     closing_time: "14:30",
     qty_chairs: 30,
@@ -50,8 +50,8 @@ export const MockLabs = [
     is_activated: true,
   },
   {
-    enviroment: "5abcd",
-    name: "Lab 05",
+    enviroment_id: "5abcd",
+    lab_name: "Lab 05",
     opening_time: "10:45",
     closing_time: "19:00",
     qty_chairs: 22,
@@ -62,8 +62,8 @@ export const MockLabs = [
     is_activated: true,
   },
   {
-    enviroment: "6abcd",
-    name: "Lab 06",
+    enviroment_id: "6abcd",
+    lab_name: "Lab 06",
     opening_time: "07:00",
     closing_time: "12:00",
     qty_chairs: 15,
@@ -74,8 +74,8 @@ export const MockLabs = [
     is_activated: false,
   },
   // {
-  //   enviroment: "7abcd",
-  //   name: "Lab 07",
+  //   enviroment_id: "7abcd",
+  //   lab_name: "Lab 07",
   //   opening_time: "08:30",
   //   closing_time: "12:30",
   //   qty_chairs: 20,
@@ -86,8 +86,8 @@ export const MockLabs = [
   //   is_activated: true,
   // },
   // {
-  //   enviroment: "8abcd",
-  //   name: "Lab 08",
+  //   enviroment_id: "8abcd",
+  //   lab_name: "Lab 08",
   //   opening_time: "13:15",
   //   closing_time: "17:45",
   //   qty_chairs: 28,
@@ -98,8 +98,8 @@ export const MockLabs = [
   //   is_activated: true,
   // },
   // {
-  //   enviroment: "9abcd",
-  //   name: "Lab 09",
+  //   enviroment_id: "9abcd",
+  //   lab_name: "Lab 09",
   //   opening_time: "10:00",
   //   closing_time: "14:00",
   //   qty_chairs: 18,
@@ -110,8 +110,8 @@ export const MockLabs = [
   //   is_activated: false,
   // },
   // {
-  //   enviroment: "10bcd",
-  //   name: "Lab 10",
+  //   enviroment_id: "10bcd",
+  //   lab_name: "Lab 10",
   //   opening_time: "07:45",
   //   closing_time: "11:30",
   //   qty_chairs: 24,

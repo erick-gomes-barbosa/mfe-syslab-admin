@@ -12,12 +12,14 @@ import { useState } from "react";
 import RegisterLabErrorModal from "./register-lab-error-modal";
 import RegisterLabSucessModal from "./register-lab-sucess-modal";
 
-export default function RegisterLabModal({
+export default function EditLabModal({
   isOpen,
   onClickClose,
+  defaultValues,
 }: {
   isOpen: boolean;
   onClickClose: () => void;
+  defaultValues: InsertLabType;
 }) {
   const [showRegisterLabErrorModal, setShowRegisterLabErrorModal] =
     useState<boolean>(false);
@@ -28,6 +30,7 @@ export default function RegisterLabModal({
     {
       shouldFocusError: false,
       resolver: zodResolver(InsertLabSchema),
+      defaultValues,
     }
   );
   const submitForm: SubmitHandler<InsertLabType> = (data) => {
@@ -72,7 +75,7 @@ export default function RegisterLabModal({
             </button>
           </div>
           <div className="flex w-full justify-center">
-            <h1 className="font-bold text-2xl mb-10">Adicionar Laboratório</h1>
+            <h1 className="font-bold text-2xl mb-10">Editar Laboratório</h1>
           </div>
           <div className="flex flex-col gap-4">
             <RegisterFieldsContainer>
@@ -170,7 +173,7 @@ export default function RegisterLabModal({
               type="submit"
               className="bg-blueMedium text-white w-32 h-8 rounded-lg"
             >
-              Adicionar
+              Atualizar
             </button>
           </div>
         </form>
@@ -182,11 +185,11 @@ export default function RegisterLabModal({
     <>
       <RegisterLabErrorModal
         isOpen={showRegisterLabErrorModal}
-        text="Erro ao cadastrar laboratório"
+        text="Erro ao atualizar laboratório"
       />
       <RegisterLabSucessModal
         isOpen={showRegisterLabSucessModal}
-        text="Laboratório cadastrado com sucesso"
+        text="Laboratório atualizado com sucesso"
       />
     </>
   );

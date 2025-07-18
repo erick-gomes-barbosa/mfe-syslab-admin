@@ -1,10 +1,15 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import RoutesApp from "./routes";
-import { nhost } from "./api/nhost";
+import { ApolloProvider } from "@apollo/client";
+import { apolloPublicClient } from "./api/apolloClient";
 
 export default function Root() {
-  useEffect(() => {
-    console.log(nhost);
-  }, []);
-  return <RoutesApp />;
+  useEffect(() => {}, []);
+  return (
+    <React.StrictMode>
+      <ApolloProvider client={apolloPublicClient}>
+        <RoutesApp />
+      </ApolloProvider>
+    </React.StrictMode>
+  );
 }
